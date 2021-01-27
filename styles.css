@@ -3,7 +3,7 @@
 }
 
 :root {
-  --cell-size: 3em;
+  --cell-size: 7vh;
 }
 
 body {
@@ -114,8 +114,13 @@ body {
 
 .restart-button {
   display: none;
-  position: absolute;
   bottom: 2em;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
   cursor: pointer;
   border: 3px solid white;
   font-size: 2em;
