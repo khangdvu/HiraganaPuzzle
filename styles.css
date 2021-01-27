@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --cell-size: 3.2em;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: normal;
+  background: linear-gradient(to right, rgba(255, 153, 255, 0.6), rgba(51, 204, 255, 0.6) )
+}
+
+.top-title{
+  position: absolute;
+  top: 10px;
+  font-size: 5em;
+}
+
+.puzzle-hint {
+  visibility: hidden;
+  font-size: 2em;
+}
+.puzzle-chart {
+  width: 100vw;
+  height: 100vh;
+  display:grid;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(5, auto)
+}
+
+.puzzle-cell {
+  width: var(--cell-size);
+  height: var(--cell-size);
+  border: 3px solid white;
+  font-family: Helvetica, sans-serif;
+  font-size: 2em;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  cursor: move;
+  background-color: rgba(255,255,255,0.2);
+}
+
+.puzzle-cell.dragging {
+  background-color: rgba(255,255,255,0.5);
+}
+
+.alphabet-cell.hover {
+  background-color: rgba(255,255,255,0.5);
+  border-style: dashed;
+}
+
+
+.alphabet-chart {
+  width: 100vw;
+  height: 100vh;
+  display:grid;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(5, auto)
+}
+
+.alphabet-cell {
+  width: var(--cell-size);
+  height: var(--cell-size);
+  border: 3px solid white;
+  display: grid;
+  font-family: Helvetica, sans-serif;
+  font-size: 2em;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  background-color: rgba(255,255,255,0.2);
+}
+
+
+.puzzle-message {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.start-button {
+  cursor: pointer;
+  border: 3px solid white;
+  font-size: 2em;
+  font-family: Helvetica, sans-serif;
+  background-color: rgba(255,255,255,0.3);
+  justify-content: center;
+  align-content: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+}
+
+.start-button:hover {
+ opacity: 0.7;
+}
+
+.restart-button {
+  display: none;
+  position: absolute;
+  bottom: 2em;
+  cursor: pointer;
+  border: 3px solid white;
+  font-size: 2em;
+  font-family: Helvetica, sans-serif;
+  background-color: rgba(255,255,255,0.3);
+  justify-content: center;
+  align-content: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+}
+
+.restart-button:hover {
+ opacity: 0.7;
+}

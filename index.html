@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie-edge">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <title>Hiragana Puzzle</title>
+</head>
+<body>
+  <div class="alphabet-chart" id="alphabet-chart">
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+    <div class ="alphabet-cell" alphabet-cell></div>
+  </div>
+  <div class="puzzle-message" id = "puzzleMessage">
+    <div data-puzzle-message-text></div>
+    <div class="top-title">Hiragana Puzzle</div>
+    <div class="puzzle-hint">Drag hiragana from the right chart onto the correct position on the left chart! </div>
+    <button class="start-button" id="startButton">Start</button>
+    <button class="restart-button" id="restartButton">Restart</button>
+  </div>
+  <div class="puzzle-chart" id="puzzle-chart">
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+    <div class ="puzzle-cell" draggable = "true" puzzle-cell></div>
+  </div>
+
+</body>
+</html>
