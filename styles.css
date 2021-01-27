@@ -16,13 +16,19 @@ body {
 .top-title{
   position: absolute;
   top: 10px;
-  font-size: 5em;
+  font-size: 4em;
 }
 
 .puzzle-hint {
   visibility: hidden;
   font-size: 2em;
 }
+
+.win-message {
+  visibility: hidden;
+  font-size: 2em;
+}
+
 .puzzle-chart {
   width: 100vw;
   height: 100vh;
@@ -85,7 +91,7 @@ body {
 }
 
 
-.puzzle-message {
+.puzzle-center {
   display: grid;
   justify-content: center;
   align-content: center;

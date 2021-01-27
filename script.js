@@ -5,7 +5,9 @@ const alphabetChart = document.querySelector('.alphabet-chart')
 const puzzleChart = document.querySelector('.puzzle-chart')
 const startButton = document.getElementById('startButton')
 const restartButton = document.getElementById('restartButton')
-const puzzleHint = document.querySelector('.puzzle-hint ')
+const puzzleHint = document.querySelector('.puzzle-hint')
+const winMessage = document.querySelector('.win-message')
+var score = 0
 let hiragana = [
     'あ', 'い', 'う', 'え', 'お',
     'か', 'き', 'く', 'け', 'こ',
@@ -46,6 +48,10 @@ puzzleCells.forEach(puzzleCell => {
             droppedAlphabetCell.style.backgroundColor = "rgba(119, 185, 111,0.5)"
             puzzleCell.innerText = ''
             puzzleHint.style.visibility = 'hidden'
+            score += 1
+            if (score == 46) {
+                winMessage.style.visibility = 'visible'
+            }
         }
         droppedAlphabetCell.classList.remove('dropped')
     })
@@ -78,7 +84,8 @@ restartButton.addEventListener('click', () => {
 
 function setupPuzzleChart(){
     let currentHiraganaSet = [...hiragana]
-    
+    score = 0
+
     for(puzzleCell of puzzleCells){
         if (currentHiraganaSet.length > 0){
             var randomNumber = getRandomNumber(0, currentHiraganaSet.length)
@@ -93,7 +100,8 @@ function setupPuzzleChart(){
         alphabetCell.style.backgroundColor = "rgba(255,255,255,0.2)"
         i++
     }
-    puzzleHint.style.visibility = 'visible'  
+    puzzleHint.style.visibility = 'visible' 
+    winMessage.style.visibility = 'hidden'   
     startButton.style.display = 'none'
     restartButton.style.display = 'flex'     
 }
@@ -105,7 +113,6 @@ function getRandomNumber(min, max) {
 function compareCells(alphabetCell, puzzleCell) {
     puzzleIndex = hiragana.indexOf(puzzleCell.innerText)
     alphabetIndex = romanji.indexOf(alphabetCell.innerText)
-    console.log(puzzleIndex,alphabetIndex )
     if (puzzleIndex === alphabetIndex){
         return true
     }
