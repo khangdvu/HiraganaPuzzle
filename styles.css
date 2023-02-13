@@ -126,6 +126,7 @@ body {
   margin-right: auto;
   left: 0;
   right: 0;
+  length: 5em;
   text-align: center;
   cursor: pointer;
   border: 3px solid white;
