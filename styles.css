@@ -119,13 +119,7 @@ body {
 }
 
 .restart-button {
-  display: none;
   bottom: 2em;
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  length: 5em;
-  text-align: center;
   cursor: pointer;
   border: 3px solid white;
   font-size: 2em;
